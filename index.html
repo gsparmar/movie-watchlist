@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <!-- meta viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- cdn-font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link html to css -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Find your film</h1>
+      <h4><a href="./watchlist.html" class="yh">My watchlist</a></h4>
+      <form id="movies-form">
+        <label for="input-movie">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </label>
+        <input id="input-movie" type="text" placeholder="Search for a movie" />
+        <button type="submit" id="input-btn">Search</button>
+      </form>
+    </header>
+    <main>
+      <!-- start message -->
+      <div class="start-exploring-message" id="start-exploring-message">
+        <i class="fa-solid fa-film"></i>
+        <p>Start exploring</p>
+      </div>
+      <!-- can't find movies message -->
+      <div class="try-search-again" id="try-search-again">
+        <p>
+          Unable to find what you're looking for. Please try another search.
+        </p>
+      </div>
+      <!-- display movies -->
+      <div class="movies" id="movies-list"></div>
+    </main>
+
+    <script src="index.js"></script>
+  </body>
+</html>

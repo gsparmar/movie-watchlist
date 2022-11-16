@@ -1,0 +1,255 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+header {
+  padding: 2.8em 5em;
+  background: #393e41;
+  color: white;
+  background-image: url('https://images.unsplash.com/photo-1628432136678-43ff9be34064?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80');
+  background-blend-mode: multiply;
+  background-size: cover;
+  background-position: top 10% left;
+  position: relative;
+}
+
+header > h1 {
+  font-weight: 800;
+  font-size: 3rem;
+  margin-right: 1.5rem;
+}
+header > h4 {
+  font-weight: 700;
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+/* form styling */
+form {
+  width: 85%;
+  height: 34px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  position: absolute;
+  bottom: -17px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: white;
+}
+label {
+  display: flex;
+  align-items: center;
+}
+input,
+button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+input {
+  border: none;
+  width: 100%;
+}
+form:focus,
+form:hover {
+  transform: scale(1.1);
+}
+button {
+  border: none;
+  border-left: 1px solid #d1d5db;
+  border-radius: 6px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background: #f9fafb;
+  color: #374151;
+  height: 34px;
+  cursor: pointer;
+}
+
+i {
+  color: #9ca3af;
+  padding: 1rem;
+}
+/* main styling */
+.yh:hover,
+.yh:focus {
+  color: #fec654;
+}
+.start-exploring-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.fa-film {
+  font-size: 80px;
+  padding: 0;
+  margin-bottom: 0.1em;
+  color: #dfdddd;
+}
+
+.try-search-again {
+  width: 50%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  display: none;
+}
+.start-exploring-message > p,
+.try-search-again > p {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #dfdddd;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+/* movies display */
+.movies {
+  margin: 0 auto;
+  display: none;
+  align-self: flex-start;
+}
+.movie-container {
+  width: 90%;
+  height: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5em auto;
+  border-bottom: 1.5px solid #e5e7eb;
+  padding: 1em;
+}
+.movie-image {
+  width: 6.25em;
+  height: 9.375em;
+  margin: 0;
+  margin-right: 1.3125em;
+}
+.movie-information {
+  width: 70%;
+}
+.fa-star {
+  color: #fec654;
+  padding: 0;
+}
+
+.title-score,
+.watchlist,
+.genre-length {
+  display: flex;
+  align-items: center;
+}
+
+.title-score > p {
+  margin: 0;
+  margin-right: 0.45em;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+.genre-length {
+  font-size: 0.75rem;
+  margin-right: 1.3125em;
+  justify-content: space-between;
+}
+.genre-length > p {
+  margin-right: 1rem;
+}
+.fa-circle-plus,
+.fa-circle-minus,
+.fa-circle-check {
+  font-size: 1rem;
+  color: #111827;
+  padding: 0;
+  margin-right: 0.3125em;
+}
+.fa-circle-check {
+  color: #9ca3af;
+}
+.watchlist > p {
+  color: #111827;
+}
+.watchlist {
+  cursor: pointer;
+}
+.watchlist:hover,
+.watchlist:focus {
+  transform: scale(1.1);
+}
+.watchlist > .ck-movie {
+  color: #9ca3af;
+  font-weight: 700;
+}
+.description {
+  color: #6b7280;
+  font-size: 0.875rem;
+  margin-right: 1em;
+}
+/* watchlist html css */
+.add-movies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+.add-movies:focus,
+.add-movies:hover {
+  transform: scale(1.1);
+}
+.empty-watchlist {
+  display: flex;
+  flex-direction: column;
+}
+.empty-watchlist > p {
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #dfdddd;
+  margin: 0;
+}
+.add-watchlist {
+  color: #363636;
+  font-size: 0.875rem;
+}
+/* media querys */
+
+@media (min-width: 500px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    object-fit: cover;
+    object-position: center;
+    align-items: center;
+    background-position: top 25% left 15%;
+  }
+  header > h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 800px) {
+  form {
+    width: 50%;
+  }
+}
+@media (min-width: 1000px) {
+  .movie-container {
+    width: 500px;
+  }
+}
